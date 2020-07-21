@@ -156,3 +156,86 @@ nav ul{
 #slideout-menu{
     display: none;
 }
+
+/* Sections */
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-heading{
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+}
+.section-heading:hover {
+    padding: 4px 48px;
+    background: red;
+}
+/* Section Source */
+
+#section-source p {
+    padding: 8px;
+    text-align: center;
+}
+
+#section-source a {
+    margin: 8px;
+    text-align: center;
+}
+/* Card */
+.card-image{
+    transition: 0.4s;
+}
+.card-image:hover{
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description{
+    padding: 0 8px;
+}
+
+/* Button Read More */
+.btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-readmore:hover{
+    background: red;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px; 
+}
+
+
+
+/* Media Queries */
+@media(min-width: 720px){
+    main{
+        width: 95%;
+    }
+    .card {
+        width: 45%;
+    }
+    .card .card-image img {
+        width: 100%;
+        height: 800px;
+    }
+
+    @media(min-width: 1200px){
+        main{
+            width:85%
+        }
+    }
+}
