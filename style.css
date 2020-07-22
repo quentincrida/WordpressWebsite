@@ -162,6 +162,8 @@ nav ul{
     margin-top: 72px;
     width: 100%;
     text-align: center;
+    opacity: 0;
+    pointer-events: none;
 }
 #slideout-menu ul {
 list-style: none;
@@ -322,7 +324,7 @@ footer #social-media-footer ul li:hover a .fa-github{
     }
 
     #slideout-menu {
-        /* display: block; */
+        display: block;
     }
 }
 
